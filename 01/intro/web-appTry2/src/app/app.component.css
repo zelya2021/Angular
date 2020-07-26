@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inner{
+    height: 75%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 68px -6px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 50%;
+    height: 100%;
+    padding: 0 50px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.user-form{
+    background: #6C63FF;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+.user-form h1{
+    color: #fff;
+    padding: 0 0 15px 0;
+    font-weight: 700;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+th{
+    text-align: left;
+    font-size: 20px;
+}
+th:nth-child(2n){
+    padding: 15px 0 0 10px;
+}

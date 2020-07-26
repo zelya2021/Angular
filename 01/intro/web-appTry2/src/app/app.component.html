@@ -1,0 +1,36 @@
+<div class="inner">
+  <div class="photo">
+      <img src="https://raw.githubusercontent.com/Almamun-Hossain/responsive-login-form-design/abef614b2cf30cffc0a4b2e288e339b0f8128f2f/img/interface.svg">
+  </div>
+  <div class="user-form">
+      <form>
+          <h1>{{name}}</h1>
+         
+          <h2>{{position}}</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>Дата рождения:</th>
+                <th>{{getDateOfBr()}}</th>
+              </tr>
+              <tr>
+                <th>Телефон:</th>
+                <th>{{getPhoneNumber()}}</th>
+              </tr>
+              <tr>
+                <th>Город: </th>
+                <th>{{city}}</th>
+              </tr>
+              <tr>
+                <th>GitHub: </th>
+                <th><a [href]="linkGitHub" [target]="openMode">zelya2021</a></th>
+              </tr>
+              <tr>
+                <th>Образование: </th>
+                <th>{{education}}</th>
+              </tr>
+            </tbody>
+          </table>
+      </form>
+  </div>
+</div>
