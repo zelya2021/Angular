@@ -1,0 +1,6 @@
+<div class="items">
+    <ng-content></ng-content><!--тег в который попадают данные которые помещаются в list.component.html
+    <item [value]="'Default'"></item>-->  
+    <item *ngFor="let item of items" [value]="item" (click)="itemSelect(item)"></item>
+    <button (click)="clear()">Clear</button>
+</div>
