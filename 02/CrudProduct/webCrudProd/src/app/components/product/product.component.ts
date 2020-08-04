@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,Output, EventEmitter } from '@angular/core';
+import { Product } from 'src/app/models/product';
 
 @Component({
-  selector: 'app-product',
+  selector: 'product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent{
-
-  constructor() { }
-
+  @Input() product: Product;
+  @Output() addProductEvent = new EventEmitter<Product>();
+  //tasks = [];
+ 
+  onClickAddProduct(){
+    this.addProductEvent.emit(this.product);
+    //this.tasks.push({name: this.product});
+    //this.task = '';
+  }
 }

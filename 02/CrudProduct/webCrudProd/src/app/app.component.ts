@@ -7,9 +7,7 @@ import { Product } from '../app/models/product';
 })
 export class AppComponent {
   title = 'webCrudProd';
-  product: Product[]=[];
+  
 
-  constructor() {
-    this.product.push(new Product(1,'Praga',350,'delicious','dessert'));
-  }
+ 
 }
